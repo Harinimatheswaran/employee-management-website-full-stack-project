@@ -1,0 +1,153 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #e5d0ff;
+}
+
+.get-started-container {
+    display: flex;
+    width: 100%; /* Full width for main container */
+    height: calc(100vh - 80px); /* Set to full height minus header */
+}
+
+.get-started-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #6020cc; /* Lightened header color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Position it at the top */
+    left: 0; /* Ensure it starts from the left edge */
+    z-index: 1000; /* Ensure it stays above other content */
+    color: white; /* Change text color to white */
+}
+
+.get-started-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.get-started-title {
+    text-align: center;
+    font-size: 28px;
+    color: white; /* Change title color to white */
+    flex-grow: 1;
+}
+
+.get-started-header-buttons {
+    display: flex;
+}
+
+.get-started-header-button {
+    margin-right: 50px; /* Adjusted margin to move buttons leftward */
+    padding: 0; /* Remove padding to make it look like text */
+    background: none; /* Remove background */
+    color: white; /* Keep the text color white */
+    border: none; /* Remove border */
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline; /* Optional: add underline for emphasis */
+}
+
+.get-started-header-button:hover {
+    color: white; /* Change color on hover */
+}
+
+.get-started-auth-container {
+    display: flex;
+    width: 100%; /* Full width for auth container */
+    max-width: 1200px; /* Optional max width */
+    margin-top: 80px; /* Adjusted top margin to avoid overlap with fixed header */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.get-started-auth-content {
+    flex: 2; /* Take more space on the right */
+    padding: 20px;
+    max-width: 400px; /* Limit the maximum width */
+    margin: auto; /* Center align the form */
+}
+
+.get-started-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.get-started-nav-item {
+    margin: 0 10px;
+}
+
+.get-started-nav-link {
+    text-decoration: none;
+    padding: 10px;
+    color: #6020cc;
+    transition: color 0.3s ease;
+}
+
+.get-started-nav-link:hover {
+    color: #000000;
+}
+
+.get-started-nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #6020cc;
+}
+
+.get-started-auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align form items */
+    width: 100%; /* Full width for the form */
+}
+
+.get-started-auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+.get-started-auth-button {
+    padding: 10px 15px;
+    background-color: #6020cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.get-started-auth-button:hover {
+    background-color: #005f8a;
+}
+
+.get-started-image-container {
+    flex: 1; /* Take remaining space for image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 80%; /* Increased height for the image container */
+}
+
+.get-started-right-image {
+    max-width: 80%; /* Smaller image */
+    height: 100%; /* Make image fill the height of the container */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Additional styles to prevent content overlap */
+.get-started-container {
+    margin-top: 80px; /* Prevent overlap with header */
+}

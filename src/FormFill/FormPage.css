@@ -1,0 +1,106 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2e5ff; /* Very light blue for the background */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center the body content horizontally */
+  align-items: center; /* Center the body content vertically */
+  min-height: 100vh; /* Minimum height to prevent cut-off */
+  padding: 20px; /* Add some padding to prevent cut-off */
+  box-sizing: border-box; /* Include padding in height calculations */
+}
+
+.form-page-container {
+  width: 600px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white; /* White background for the form */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.form-page-container:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); /* Box shadow transition for hover effect */
+}
+
+.form-page-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Deep navy blue */
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.form-page-title:hover {
+  color: #34495e; /* Slight color change on hover */
+}
+
+.form-page-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-page-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: all 0.2s ease;
+}
+
+.form-page-group:hover {
+  transform: scale(1.02); /* Slight scaling for form fields when hovered */
+}
+
+.form-page-label {
+  flex: 1;
+  margin-right: 10px;
+  color: #1d5e9f; /* Slightly lighter navy */
+  font-weight: 500;
+}
+
+.form-page-input,
+.form-page-select,
+.form-page-textarea {
+  flex: 2;
+  padding: 12px;
+  border: 1px solid #bdc3c7; /* Soft gray */
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f4f6f7; /* Light gray */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-page-input:focus,
+.form-page-select:focus,
+.form-page-textarea:focus {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(44, 62, 80, 0.2); /* Navy blue shadow on focus */
+}
+
+.form-page-textarea {
+  resize: none;
+}
+
+.form-page-button {
+  padding: 12px;
+  width: 240px;
+  background-color: #0077b6; /* Blue color */
+  color: white; /* Text color stays white */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px auto 0;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form-page-button:hover {
+  background-color: #005f8a; /* Dark blue on hover */
+  transform: translateY(-3px); /* Button lift effect */
+}
+
+.form-page-button:active {
+  transform: translateY(0);
+}
