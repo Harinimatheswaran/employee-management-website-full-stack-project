@@ -23,7 +23,7 @@ function GetStarted({ onAuthSuccess }) {
   return (
     <div className="get-started-container">
       <header className="get-started-header">
-        <div className="get-started-logo">StaffTrakerr</div>
+        <div className="get-started-logo">Staff Trakerr</div>
         <h1 className="get-started-title">Employee Management Website</h1>
         <div className="get-started-header-buttons">
           <button className="get-started-header-button">About Us</button>
