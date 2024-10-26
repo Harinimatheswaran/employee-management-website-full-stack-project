@@ -67,7 +67,8 @@ body {
   border: 1px solid #bdc3c7; /* Soft gray */
   border-radius: 5px;
   font-size: 16px;
-  background-color: #f4f6f7; /* Light gray */
+  background-color: #ffffff; /* Light gray */
+  color: #005f8a;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -86,7 +87,7 @@ body {
   padding: 12px;
   width: 240px;
   background-color: #0077b6; /* Blue color */
-  color: white; /* Text color stays white */
+  color: rgb(255, 255, 255); /* Text color stays white */
   border: none;
   border-radius: 5px;
   cursor: pointer;
