@@ -1,0 +1,33 @@
+.salary-page {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1 {
+    color: #03045e;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #0077b6;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #48cae4;
+    color: #03045e;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ade8f4;
+  }
+  

@@ -1,0 +1,40 @@
+/* Dashboard/Dashboard.css */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+
+  min-height: 100vh; /* Full height */
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  color: #0d0db2; /* Dark color for contrast */
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.dashboard-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Spacing between buttons */
+}
+
+.dashboard-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #0077b6; /* Button color */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make buttons full-width */
+  max-width: 300px; /* Limit the button width */
+}
+
+.dashboard-button:hover {
+  background-color: #005f8b; /* Darker shade on hover */
+}

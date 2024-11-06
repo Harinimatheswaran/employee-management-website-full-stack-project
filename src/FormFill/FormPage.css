@@ -1,26 +1,26 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f2e5ff; /* Very light blue for the background */
-  margin: 0; /* Remove default margin */
-  display: flex; /* Flexbox for centering */
-  justify-content: center; /* Center the body content horizontally */
-  align-items: center; /* Center the body content vertically */
-  min-height: 100vh; /* Minimum height to prevent cut-off */
-  padding: 20px; /* Add some padding to prevent cut-off */
-  box-sizing: border-box; /* Include padding in height calculations */
+  background-color: #f2e5ff; 
+  margin: 0; 
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh; 
+  padding: 20px; 
+  box-sizing: border-box;
 }
 
 .form-page-container {
   width: 600px;
   padding: 30px;
   border-radius: 10px;
-  background-color: white; /* White background for the form */
+  background-color: white; 
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
 
 .form-page-container:hover {
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); /* Box shadow transition for hover effect */
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
 .form-page-title {
@@ -98,8 +98,8 @@ body {
 }
 
 .form-page-button:hover {
-  background-color: #005f8a; /* Dark blue on hover */
-  transform: translateY(-3px); /* Button lift effect */
+  background-color: #005f8a; 
+  transform: translateY(-3px); 
 }
 
 .form-page-button:active {

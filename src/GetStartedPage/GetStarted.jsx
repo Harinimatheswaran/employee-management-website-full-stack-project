@@ -12,12 +12,12 @@ function GetStarted({ onAuthSuccess }) {
 
   const handleAuthSubmit = (e) => {
     e.preventDefault();
+    console.log(authData); // Log auth data for debugging
     if (isSignUp) {
-      console.log(authData); // Replace with actual logic
-      setIsSignUp(false); // Switch to sign-in after sign-up
-    } else {
-      onAuthSuccess();
+      // Handle sign-up logic here
+      setIsSignUp(false); // Reset to Sign In after successful sign-up
     }
+    onAuthSuccess(); // Call onAuthSuccess after submission
   };
 
   return (

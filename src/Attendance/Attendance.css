@@ -1,0 +1,80 @@
+/* Attendance.css */
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ead9fa; /* Light background */
+  }
+  
+  .container {
+    max-width: 500px; /* Adjusted max-width for better layout */
+    margin: 50px auto; /* Center the container with some margin */
+    padding: 20px;
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styles */
+  h1 {
+    color: #0077b6; /* Primary color */
+    text-align: center;
+    margin-bottom: 20px; /* Space below the header */
+  }
+  
+  /* Input and Button Styles */
+  .input-group {
+    margin-bottom: 15px; /* Space below each input group */
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #03045e; /* Darker text color */
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 100%; /* Full width for inputs */
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #48cae4; /* Lighter blue on focus */
+  }
+  
+  /* Button Styles */
+  .button-group {
+    display: flex;
+    justify-content: space-between; /* Space buttons evenly */
+    margin-top: 20px; /* Space above buttons */
+  }
+  
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0077b6 !important; /* Change to blue color */
+    color: white; /* Text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1; /* Flex grow to take equal space */
+    margin: 0 5px; /* Space between buttons */
+  }
+  
+  button:hover {
+    background-color: #005f8c; /* Darker shade on hover */
+  }
+  
+  /* Success Message Styles */
+  .success-message {
+    color: #2c6e49; /* Success message color */
+    text-align: center;
+    margin-top: 15px;
+  }
+  

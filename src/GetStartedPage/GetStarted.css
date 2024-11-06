@@ -1,7 +1,9 @@
+/* Updated getStarted.css */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color: #e5d0ff;
+    background-color: #bd99e8; /* Light violet */
 }
 
 .get-started-container {
@@ -16,7 +18,7 @@ body {
     align-items: center;
     width: 100%;
     padding: 20px;
-    background-color: #6020cc; /* Lightened header color */
+    background-color: #6020cc; /* Header color */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed; /* Fix the header at the top */
     top: 0; /* Position it at the top */
@@ -62,7 +64,7 @@ body {
     max-width: 1200px; /* Optional max width */
     margin-top: 80px; /* Adjusted top margin to avoid overlap with fixed header */
     padding: 20px;
-    background-color: white;
+    background-color: white; /* White background for contrast */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -88,17 +90,17 @@ body {
 .get-started-nav-link {
     text-decoration: none;
     padding: 10px;
-    color: #6020cc;
+    color: #6020cc; /* Header link color */
     transition: color 0.3s ease;
 }
 
 .get-started-nav-link:hover {
-    color: #000000;
+    color: #000000; /* Hover color for links */
 }
 
 .get-started-nav-link.active {
     font-weight: bold;
-    border-bottom: 2px solid #6020cc;
+    border-bottom: 2px solid #6020cc; /* Active link underline */
 }
 
 .get-started-auth-form {
@@ -112,22 +114,22 @@ body {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #bdc3c7;
-    border-radius: 5px;
+    border: 1px solid #bdc3c7; /* Input border color */
+    border-radius: 5px; /* Input border radius */
 }
 
 .get-started-auth-button {
     padding: 10px 15px;
-    background-color: #6020cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    background-color: #6020cc; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 16px; /* Button text size */
 }
 
 .get-started-auth-button:hover {
-    background-color: #005f8a;
+    background-color: #005f8a; /* Button hover color */
 }
 
 .get-started-image-container {
@@ -143,7 +145,7 @@ body {
     max-width: 80%; /* Smaller image */
     height: 100%; /* Make image fill the height of the container */
     object-fit: cover; /* Ensure the image covers the container */
-    border-radius: 8px;
+    border-radius: 8px; /* Image border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 

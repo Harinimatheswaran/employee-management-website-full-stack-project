@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FormPage.css';
+import axios from 'axios';
 
 function FormPage() {
   const [formData, setFormData] = useState({
@@ -14,7 +15,6 @@ function FormPage() {
     department: '',
     startDate: '',
     employeeId: '',
-    emergencyContact: ''
   });
 
   const handleChange = (e) => {
@@ -22,11 +22,38 @@ function FormPage() {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-    alert('Employee Details Submitted!');
+    console.log('Submitting data:', formData); // Log form data
+  
+    try {
+      const response = await axios.post('http://localhost:5000/api/employees', formData);
+
+      console.log('Response:', response); // Log response for debugging
+      if (response.status === 201) {
+        alert('Employee Details Submitted!');
+        setFormData({
+          name: '',
+          designation: '',
+          employeeId: '',
+          gender: '',
+          dob: '',
+          age: '',
+          email: '',
+          phone: '',
+          address: '',
+          department: '',
+          startDate: '',
+          
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting employee data:', error.response ? error.response.data : error.message);
+      alert(`Failed to submit employee data: ${error.response ? error.response.data.message : error.message}`);
+    }
   };
+  
+  
 
   return (
     <div className="form-page-container">
